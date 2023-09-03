@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+:root{
+    --blue : #5f9ef7;
+    --orange : #ff721b;
+    --white : #fff7ea;
+    --dark : #414143;
+}
+html{
+font-family: 'Inter', sans-serif;
+}
+body{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark);
+}
+.header_card{
+    min-width: 400px;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:100px 10px;
+    border-radius: 20px;
+    gap: 20px;
+    padding: 20px;
+}
+.header_card_logo{
+    margin-top: 50px;
+    min-width: 50px;
+    max-width: 100px;
+    display: flex;
+}
+
+.header_card_logo img{
+    border-radius: 20px;
+}
+.header_card_title{
+    color: var(--blue);
+    font-size: 50px;
+    font-weight: 600;
+    margin: 30px 0;
+}
+.header_card_input {
+    display: flex;
+    flex-direction:column;
+    gap: 20px;
+    width: 100%;
+}
+
+.header_card_input input{
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    background-color: var(--dark);
+    color: var(--white);
+    padding:  20px 20px;
+}
+
+/* .header_card_input input:hover, */
+.header_card_input input:focus{
+    opacity: 0.8;
+}
+.header_card_btn{
+    display: flex;
+    margin: 30px 0;
+}
+
+.header_card_btn button{
+    background-color: var(--orange);
+    color: var(--white);
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 600;
+}
+.header_card_btn button:hover{
+    opacity: 0.8;
+    transform: translateY(-5px);
+    box-shadow: var(--orange) 0px 3px 5px;
+    cursor: pointer;
+}
+.header_card_other{
+    width: 100%;
+    padding:  0 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: smaller;
+}
+.header_card_other a:hover{
+    color: var(--blue);
+    cursor: pointer;
+}
+
+.header_social svg{
+    width: 70px;
+    height: 70px;
+    
+}
+.header_social svg:hover{
+    transform: scale(1.1);
+}
